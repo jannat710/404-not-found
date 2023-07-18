@@ -9,7 +9,7 @@ body {
     font-family: 'Inconsolata', monospace;
     font-family: 'Space Mono', monospace;
 }
-
+/* nav styles */
 nav p {
     width: 80%;
     margin: 0 auto;
@@ -20,7 +20,7 @@ nav p {
     font-size: 1.5rem;
     font-weight: 700;
 }
-
+/* main styles */
 main {
     display: flex;
     justify-content: space-between;
@@ -59,13 +59,34 @@ main {
     border-radius: 3px;
     margin-top: 50px;
 }
+/* footer styles */
 
 footer p {
     text-align: center;
-    margin-top: 200px;
+    margin-top: 150px;
     margin-bottom: 20px;
     color: #BDBDBD;
     font-family: Montserrat;
     font-size: 0.8rem;
     font-weight: 700;
 }
+/* media query */
+@media screen and (max-width:576px) {
+    header {
+
+        padding: 10px;
+        height: 95px;
+    }
+    main{
+        flex-direction:column ;
+    }
+    .banner-title {
+        font-size: 2.5rem;
+    }
+    .banner-details {
+        font-size: 1rem;
+    }
+    .btn{
+        margin-bottom: 0px;
+    }
+}    
